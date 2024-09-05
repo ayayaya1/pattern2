@@ -72,6 +72,7 @@
             transition: background-color 0.3s;
             text-decoration: none;
             display: inline-block;
+            text-align: center;
         }
 
         button:hover,
@@ -99,12 +100,13 @@
         /* ボタングループのスタイル */
         .button-group {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             /* スマホ用に縦に並べる */
             align-items: center;
             /* センタリング */
             gap: 10px;
             margin-top: 20px;
+            justify-content: center;
         }
 
         /* メディアクエリ */
@@ -120,8 +122,7 @@
 <body>
     <div class="container">
         <h1>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTFQcx-KlZFGhZnPWeqaZ2aimPUvAIxWS38SczK-TEy4fz_kfz9CV_p5uIre6OIq3P3jU&usqp=CAU"
-                alt="三菱自動車ロゴ">三菱自動車お勧め診断
+            三菱自動車お勧め診断
         </h1>
         <p>あなたにぴったりの三菱自動車を診断します。質問に答えてください。</p>
 
