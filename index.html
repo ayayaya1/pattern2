@@ -75,47 +75,52 @@
             text-align: center;
         }
 
-        button:hover,
-        a.button:hover {
-            background-color: #b0000e;
-        }
+        /* 小さめのボタンのスタイル */
+        .button-small {
+            font-size: 14px;
+            /* 小さめの文字サイズ */
 
-        /* 結果表示部分のスタイル */
-        .result {
-            margin-top: 16px;
-            font-size: 18px;
-            font-weight: bold;
-            display: none;
-        }
-
-        /* 車の画像のスタイル */
-        .car-image {
-            margin-top: 20px;
-            width: 100%;
-            max-width: 300px;
-            border-radius: 10px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-        }
-
-        /* ボタングループのスタイル */
-        .button-group {
-            display: flex;
-            flex-direction: row;
-            /* スマホ用に縦に並べる */
-            align-items: center;
-            /* センタリング */
-            gap: 10px;
-            margin-top: 20px;
-            justify-content: center;
-        }
-
-        /* メディアクエリ */
-        @media (max-width: 600px) {
-            h1 {
-                font-size: 20px;
-                /* スマホ用にフォントサイズを小さくする */
+            button:hover,
+            a.button:hover {
+                background-color: #b0000e;
             }
-        }
+
+            /* 結果表示部分のスタイル */
+            .result {
+                margin-top: 16px;
+                font-size: 18px;
+                font-weight: bold;
+                display: none;
+            }
+
+            /* 車の画像のスタイル */
+            .car-image {
+                margin-top: 20px;
+                width: 100%;
+                max-width: 300px;
+                border-radius: 10px;
+                box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            }
+
+            /* ボタングループのスタイル */
+            .button-group {
+                display: flex;
+                flex-direction: row;
+                /* スマホ用に縦に並べる */
+                align-items: center;
+                /* センタリング */
+                gap: 10px;
+                margin-top: 20px;
+                justify-content: center;
+            }
+
+            /* メディアクエリ */
+            @media (max-width: 600px) {
+                h1 {
+                    font-size: 20px;
+                    /* スマホ用にフォントサイズを小さくする */
+                }
+            }
     </style>
 </head>
 
@@ -136,7 +141,8 @@
             <p id="car-comment"></p>
             <p id="car-recommendation"></p>
             <div class="button-group">
-                <a id="details-link" href="#" target="_blank" class="button">詳細はこちら</a>
+                <a id="details-link" href="#" target="_blank" class="button button-small">詳細はこちら</a>
+                <button class="button button-small" onclick="restartQuiz()">もう一度試す</button>
                 <button onclick="restartQuiz()">もう一度試す</button>
             </div>
         </div>
